@@ -3,6 +3,7 @@ package com.example.kotlinbasic_20200805
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,12 +19,20 @@ class MainActivity : AppCompatActivity() {
 //        지금 코드에 회색 바탕으로 나오는 것들은 자동 입력되는것으로 신경 쓸 필요 없음. 따라적지도 마
 //        이 중괄호 내부의 코드 => clickMeBtn 눌리면 실행 될 코드 적는 곳
         Log.d("버튼누름", "Click me 눌렸다!")
+
+
+            Toast.makeText(this,"눌렀네?",Toast.LENGTH_SHORT).show()
+
         }
+
+
 
 
         secondBtn.setOnClickListener {
 //        두번째 버튼 눌렸을 ㄸㅐ 실행 될 코드
             Log.d("버튼누름", "두번째 버튼 눌렸다!")
+            Log.e("에러로그","실행되면 안되는데 실행됨 error줄임")
+            Log.i("정보","info줄임")
         }
 
     }
