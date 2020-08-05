@@ -51,11 +51,14 @@ class MainActivity : AppCompatActivity() {
 //            5글자 안될 때 => 5글자 이상 입력하라고 토스트로 안내
                 Toast.makeText(this, "5자 이상", Toast.LENGTH_SHORT).show()
 
-            } else if (inputMessage.length < 10) {
-//            5글자 넘지만 10자 안되는 경우
+            }
 
+            else if (inputMessage.length < 10) {
+//            5글자 넘지만 10자 안되는 경우
                 Log.d("입력글자수", "5글자 이상, 10글자 미만")
-            } else {
+            }
+
+            else {
 
 //            Txt에 문구로 반영하고 싶음
                 copyResultTxt.text = inputMessage
