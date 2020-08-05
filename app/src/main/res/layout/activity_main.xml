@@ -22,7 +22,7 @@
         android:text="두번째 버튼 !!" />
 
     <EditText
-        android:id="@+id/MessageEdt"
+        android:id="@+id/messageEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="아무 단어 입력"

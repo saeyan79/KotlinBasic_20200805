@@ -37,5 +37,15 @@ class MainActivity : AppCompatActivity() {
          Toast.makeText(this,"두번째 버튼 눌렀네?",Toast.LENGTH_SHORT).show()
         }
 
+//        복사하기 버튼 눌리면 할 일
+        copyBtn.setOnClickListener {
+
+//        Edt에 입력 된 내용 받아와서 (임시 저장) 후,
+            val inputMessage = messageEdt.text.toString()
+
+//        Txt에 문구로 반영하고 싶음
+            copyResultTxt.text = inputMessage
+        }
+
     }
 }
