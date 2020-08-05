@@ -20,8 +20,7 @@ class MainActivity : AppCompatActivity() {
 //        이 중괄호 내부의 코드 => clickMeBtn 눌리면 실행 될 코드 적는 곳
         Log.d("버튼누름", "Click me 눌렸다!")
 
-
-            Toast.makeText(this,"눌렀네?",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"눌렀네?",Toast.LENGTH_SHORT).show()
 
         }
 
@@ -33,6 +32,9 @@ class MainActivity : AppCompatActivity() {
             Log.d("버튼누름", "두번째 버튼 눌렸다!")
             Log.e("에러로그","실행되면 안되는데 실행됨 error줄임")
             Log.i("정보","info줄임")
+
+//         두번째 버튼 눌리면 "두번째 버튼 눌림" 문구 짧게 출력하기 Toast 이용
+         Toast.makeText(this,"두번째 버튼 눌렀네?",Toast.LENGTH_SHORT).show()
         }
 
     }
